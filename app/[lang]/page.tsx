@@ -1,5 +1,5 @@
-import { getDictionary } from "./dictionaries";
-import Product from "./components/product";
+import { getDictionary } from "../../dictionaries";
+import Product from "../../components/product";
 
 type Props = {
   params: { lang: string };

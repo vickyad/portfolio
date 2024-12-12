@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "./button";
-import write from "../../../public/write.svg";
+import write from "../public/write.svg";
 
 type Props = {
   dict: any;
