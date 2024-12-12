@@ -37,9 +37,7 @@ export default async function RootLayout({
   return (
     <html lang={lang}>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <MainLayout dict={dict} lang={lang}>
-          {children}
-        </MainLayout>
+        <MainLayout dict={dict}>{children}</MainLayout>
       </body>
     </html>
   );

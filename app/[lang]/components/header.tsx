@@ -1,19 +1,15 @@
 import Link from "next/link";
 
-export default function Header({ dict, lang }: { dict: any; lang: string }) {
+export default function Header({ dict }: { dict: any }) {
   return (
-    <div className="header flex justify-between items-center py-4 max-w-[792px] w-full">
-      <div className="flex-1 text-white text-base font-bold">{dict.title}</div>
-      <div className="flex items-end">
+    <div>
+      <div>{dict.title}</div>
+      <div>
         <Link href="/en">
-          <div className={`p-3 ${lang === "en" ? "text-base" : "text-sm"}`}>
-            EN
-          </div>
+          <div>EN</div>
         </Link>
         <Link href="/nl">
-          <div className={`p-3 ${lang === "nl" ? "text-base" : "text-sm"}`}>
-            NL
-          </div>
+          <div>NL</div>
         </Link>
       </div>
     </div>

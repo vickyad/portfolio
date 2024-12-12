@@ -11,10 +11,8 @@ export default async function Home({ params }: Props) {
 
   return (
     <div>
-      <h1 className="text-white mt-5 text-xl font-medium tracking-tight mb-5">
-        {dict.products.catalog}
-      </h1>
-      <div className="flex h-fit gap-6">
+      <h1>{dict.products.catalog}</h1>
+      <div>
         <Product dict={dict} id={"productOne"} />
         <Product dict={dict} id={"productTwo"} />
       </div>

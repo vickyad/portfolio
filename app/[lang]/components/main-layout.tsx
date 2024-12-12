@@ -4,14 +4,13 @@ import Footer from "./footer";
 type Props = {
   children: React.ReactNode;
   dict: any;
-  lang: string;
 };
 
-export default function MainLayout({ children, dict, lang }: Props) {
+export default function MainLayout({ children, dict }: Props) {
   return (
-    <div className="flex flex-col h-full bg-slate-800 items-center">
-      <Header dict={dict} lang={lang} />
-      <div className="main flex-grow flex justify-center">{children}</div>
+    <div>
+      <Header dict={dict} />
+      <div>{children}</div>
       <Footer dict={dict} />
     </div>
   );
